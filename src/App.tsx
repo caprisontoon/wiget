@@ -293,6 +293,27 @@ function WidgetSettings({ layoutMode, isCollapsed, setIsCollapsed, setLayoutMode
                 <ChatMessage platform="Y" name="Dong Myong Son" message="시청해주시는 여러분 모두 감사합니다" color="#ef4444" />
               </div>
             </div>
+
+            <div className="p-4 bg-white border-t border-gray-100">
+              <div className="flex gap-2">
+                <button 
+                  className="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-2.5 rounded-lg text-sm font-bold transition-colors flex items-center justify-center gap-2"
+                >
+                  <Play size={16} fill="currentColor" />
+                  채팅 테스트
+                </button>
+              </div>
+              
+              {layoutMode !== 'pip' && (
+                <div className="mt-4 pt-4 border-t border-gray-100">
+                  <p className="text-xs text-gray-500 mb-2 font-medium">위젯 URL</p>
+                  <div className="flex gap-2">
+                    <input type="text" value="https://toon.at/widget/chatbox/dfad69355aa4c..." readOnly className="flex-1 bg-gray-50 border border-gray-200 rounded px-2 py-1.5 text-xs text-gray-500" />
+                    <button className="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 border border-gray-200 rounded text-xs font-medium text-gray-700">복사</button>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
@@ -473,6 +494,16 @@ function AlertSettings({ layoutMode, isCollapsed, setIsCollapsed, setLayoutMode 
                   후원 테스트
                 </button>
               </div>
+              
+              {layoutMode !== 'pip' && (
+                <div className="mt-4 pt-4 border-t border-gray-100">
+                  <p className="text-xs text-gray-500 mb-2 font-medium">알림창 URL</p>
+                  <div className="flex gap-2">
+                    <input type="text" value="https://toon.at/widget/alertbox/..." readOnly className="flex-1 bg-gray-50 border border-gray-200 rounded px-2 py-1.5 text-xs text-gray-500" />
+                    <button className="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 border border-gray-200 rounded text-xs font-medium text-gray-700">복사</button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
