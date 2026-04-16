@@ -666,7 +666,7 @@ function AlertSettings({ layoutMode, isCollapsed, setIsCollapsed, setLayoutMode 
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between px-1 gap-3">
                     <h3 className="text-sm font-bold text-gray-800 flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-                      그룹 내 프리셋 목록
+                      <span className="text-blue-600">[{activeGroup.name}]</span> 그룹 내 프리셋 목록
                     </h3>
                     <div className="flex flex-wrap items-center gap-2">
                       <button className="px-2.5 py-1.5 text-xs font-medium text-gray-600 bg-white border border-gray-300 rounded-md hover:bg-gray-50 flex items-center gap-1 shadow-sm transition-colors">
